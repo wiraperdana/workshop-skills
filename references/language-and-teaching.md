@@ -29,6 +29,8 @@ Kumpulkan contoh suara asli Wira dari transkrip rekaman sesi sebelumnya di `cont
 
 ## Tanda tulisan mesin yang dihindari
 
+*Tanda tulisan mesin* adalah label deskriptif milik workshop-skills untuk kata dan pola kalimat yang khas tulisan AI (K-261024-03). Label ini disusun untuk skill ini, tanpa sitasi.
+
 Periksa setiap judul, label, dan naskah terhadap daftar ini. Ganti dengan kalimat yang punya pelaku dan detail.
 
 - Kata pengisi: `memastikan`, `secara efektif`, `secara optimal`, `berperan penting`, `memberdayakan`, `komprehensif`, `holistik`, `lanskap`, `ekosistem` bila tidak merujuk sistem nyata, `di era digital`, `di tengah pesatnya`.
@@ -46,6 +48,8 @@ Periksa setiap judul, label, dan naskah terhadap daftar ini. Ganti dengan kalima
 Istilah teknis memakai bentuk Inggris bila itu yang lazim diucapkan praktisi, misalnya `prompt`, `context`, `harness`. Definisikan pada pemakaian pertama.
 
 ## Naskah bicara di catatan pembicara
+
+*Naskah bicara* adalah label deskriptif milik workshop-skills untuk teks lisan per slide yang ditulis di slide notes (K-261024-03). Label ini disusun untuk skill ini, tanpa sitasi.
 
 Suara pembicara hidup di naskah bicara. Setiap slide isi punya naskah dengan empat bagian:
 

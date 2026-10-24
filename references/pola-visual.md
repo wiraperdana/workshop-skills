@@ -2,6 +2,8 @@
 
 Pilih pola menurut **hubungan yang diajarkan**, lalu baru pikirkan gambarnya. Sebuah slide menjelaskan karena bentuk visualnya meniru bentuk gagasannya. Urutan tampil sebagai garis waktu. Perbandingan tampil sebagai dua sisi. Sebab akibat tampil sebagai rantai.
 
+Nama kedua belas pola di katalog ini adalah label deskriptif milik workshop-skills (K-261024-03), disusun untuk skill ini tanpa sitasi. Istilah mapan yang paling dekat dengan pola "Contoh hitungan lengkap" adalah `worked example`, yang cakupannya lebih luas.
+
 Setiap pola di bawah memuat kapan dipakai, susunan bidang 16:9, lapisan gambar dan lapisan native, serta catatan untuk mode [Normal dan Detail](mode-slide.md). Lapisan gambar dibuat dengan GPT Image tanpa teks. Lapisan native berisi judul, label, angka, panah berlabel, dan sitasi.
 
 ## Dua pola terkuat dari deck acuan

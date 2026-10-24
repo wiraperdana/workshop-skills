@@ -32,7 +32,15 @@ python3 -I scripts/audit_deck.py <deck.pptx> --mode normal
 python3 -I scripts/audit_deck.py <deck.pptx> --mode detail
 ```
 
-Skrip menandai empat hal: `KISI_KARTU` untuk tiga kotak teks atau lebih yang seukuran tanpa gambar besar, `TEKS_n>batas` untuk teks layar yang melebihi batas mode, `TANPA_NASKAH` untuk catatan yang hanya berisi daftar sumber, dan `GAMBAR_ULANG` untuk gambar besar yang dipakai di beberapa slide. Gerbang gagal bila kisi kartu melebihi 10% slide isi, ada slide yang melebihi batas kata, atau ada slide isi tanpa naskah.
+Skrip menandai lima hal. Kode-kode di bawah adalah label deskriptif milik workshop-skills (K-261024-03), dan tempat rujukannya di sini.
+
+| Kode | Arti | Menggagalkan gerbang? |
+|---|---|---|
+| `KISI_KARTU` | Tiga kotak teks atau lebih yang seukuran, tanpa gambar besar | Ya, bila melebihi 10% slide isi |
+| `TEKS_n>batas` | Teks layar sebanyak n kata, melebihi batas mode | Ya |
+| `TANPA_NASKAH` | Slide notes kosong atau hanya berisi daftar sumber | Ya |
+| `GAMBAR_ULANG` | Gambar besar yang sama dipakai di beberapa slide | Tidak, periksa manual |
+| `TANPA_VISUAL?` | Slide tanpa gambar dan tanpa kisi kartu, mungkin hanya teks | Tidak, periksa manual |
 
 Skrip hanya membaca teks native. Teks yang sudah menjadi piksel di dalam gambar tidak terhitung. Karena itu slide bergambar penuh pada mode Normal tetap diperiksa jumlah katanya lewat pembacaan visual. Tanda dari skrip adalah petunjuk. Putusan akhir apakah visual benar-benar menjelaskan tetap dibuat dari render setiap slide.
 
