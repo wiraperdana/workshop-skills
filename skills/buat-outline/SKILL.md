@@ -5,7 +5,7 @@ description: Susun judul dan isi tiap slide workshop dalam mode Normal (default)
 
 # /buat-outline
 
-Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) sebelum menulis keluaran untuk peserta atau fasilitator.
+Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) dan [contoh suara](../../references/contoh-suara.md) sebelum menulis keluaran untuk peserta atau fasilitator. Bila pengguna memberi input `contoh-suara`, olah dulu dengan prosedur di berkas contoh suara, lalu pakai sebagai acuan suara utama.
 
 Baca [struktur workshop](../../references/workshop-structure.md), [aturan sumber](../../references/sources-and-citations.md), [cakupan harness agen](../../references/agent-harness-curriculum.md) bila topik agent relevan, dan [analisis deck contoh](../../references/FGD_Child_Safety-analysis.md) bila gaya deck itu diminta.
 

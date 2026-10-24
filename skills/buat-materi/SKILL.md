@@ -10,6 +10,7 @@ Hasil akhirnya adalah deck PPTX 16:9 yang siap dipresentasikan. Setiap slide isi
 Baca referensi ini sebelum mulai:
 
 - [bahasa dan pengajaran](../../references/language-and-teaching.md), untuk suara, naskah bicara, dan tanda tulisan mesin
+- [contoh suara](../../references/contoh-suara.md), untuk pola suara pembicara dan cara menerima contoh suara dari pengguna
 - [mode slide](../../references/mode-slide.md), untuk Normal dan Detail
 - [struktur workshop](../../references/workshop-structure.md), untuk anggaran, running example, dan pola segmen
 - [pola visual](../../references/pola-visual.md) dan [produksi visual](../../references/visual-production.md)
@@ -23,7 +24,9 @@ Pakai mode **Normal** kecuali pengguna menulis `mode: detail` atau meminta deck 
 
 ## Input
 
-Terima judul, arahan bebas, audiens, nama pembicara, durasi atau rundown, tujuan belajar, mode, dan sumber dalam bentuk path, URL, teks, gambar, rekaman, transkrip, PDF, PPTX, atau Markdown. Pakai semua input yang tersedia. Tanyakan hanya bagian yang menentukan isi atau durasi dan tidak bisa disimpulkan.
+Terima judul, arahan bebas, audiens, nama pembicara, durasi atau rundown, tujuan belajar, mode, `contoh-suara`, dan sumber dalam bentuk path, URL, teks, gambar, rekaman, transkrip, PDF, PPTX, atau Markdown. Pakai semua input yang tersedia.
+
+`contoh-suara` bersifat opsional. Isinya contoh tulisan atau ucapan yang suaranya ingin ditiru, misalnya transkrip sesi atau naskah lama pembicara. Olah dengan prosedur di [contoh suara](../../references/contoh-suara.md), tunjukkan pola yang ditemukan, lalu pakai sebagai acuan suara utama untuk judul, label, dan naskah bicara. Bila input ini kosong, pakai pola yang sudah ada di berkas itu. Tanyakan hanya bagian yang menentukan isi atau durasi dan tidak bisa disimpulkan.
 
 Bahan setiap workshop hanya dipakai untuk workshop itu. Nama, angka, kasus, dan gambar dari klien lain tetap di tempatnya.
 
@@ -76,5 +79,7 @@ Bila renderer PPTX tidak tersedia, katakan dengan jelas, dan tahan sebutan "siap
 ## Keluaran
 
 Simpan PPTX final di `_output/` scope kerja terdekat. Simpan juga sumber, gambar terpilih, dan prompt gambar agar deck bisa direvisi. Deck acuan tetap utuh. Bila pengguna meminta PDF pendamping, ekspor dari deck final lalu periksa jumlah dan tampilan halamannya.
+
+Bila pengguna memberi `contoh-suara`, tanyakan di akhir apakah polanya perlu disimpan untuk run berikutnya, sesuai prosedur di [contoh suara](../../references/contoh-suara.md).
 
 Laporkan di akhir: mode, jumlah slide, rasio infografis, hasil gerbang audit, slide yang masih menjadi pengecualian beserta alasannya, dan keterbatasan produksi.

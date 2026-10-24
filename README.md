@@ -37,9 +37,12 @@ durasi: <menit, atau rundown>
 materi: <path atau URL sumber>
 mode: normal
 gaya: <deck acuan, bila ada>
+contoh-suara: <transkrip, naskah, atau rekaman pembicara, opsional>
 ```
 
 `/buat-materi` membuat tiga slide pilot lebih dulu, lalu berhenti menunggu persetujuan sebelum produksi penuh.
+
+Input `contoh-suara` diterima oleh semua skill penulis. Skill mengambil pola suara dari contoh itu, menunjukkannya, lalu memakainya sebagai acuan utama. Setelah selesai, skill menawarkan untuk menyimpan polanya di [contoh suara](references/contoh-suara.md). Tanpa input itu, skill memakai pola yang sudah tersimpan.
 
 ## Gerbang audit deck
 

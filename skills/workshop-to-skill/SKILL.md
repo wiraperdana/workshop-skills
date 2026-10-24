@@ -5,7 +5,7 @@ description: Ubah seluruh materi satu workshop, termasuk slide, dokumen, rekaman
 
 # /workshop-to-skill
 
-Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) sebelum menulis keluaran untuk peserta atau fasilitator.
+Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) dan [contoh suara](../../references/contoh-suara.md) sebelum menulis keluaran untuk peserta atau fasilitator. Bila pengguna memberi input `contoh-suara`, olah dulu dengan prosedur di berkas contoh suara, lalu pakai sebagai acuan suara utama.
 
 Buat satu skill turunan dari satu workshop atau seri pertemuan. Skill baru harus dapat digunakan ulang tanpa mencampur data antar klien. Baca [panduan sumber](../../references/sources-and-citations.md) dan [struktur workshop](../../references/workshop-structure.md). Gunakan `skill-creator` atau validator skill yang tersedia untuk menulis serta memeriksa paketnya.
 

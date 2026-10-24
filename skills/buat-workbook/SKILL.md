@@ -5,7 +5,7 @@ description: Buat panduan praktik workshop dari materi, tujuan belajar, durasi, 
 
 # /buat-workbook
 
-Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) sebelum menulis keluaran untuk peserta atau fasilitator.
+Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) dan [contoh suara](../../references/contoh-suara.md) sebelum menulis keluaran untuk peserta atau fasilitator. Bila pengguna memberi input `contoh-suara`, olah dulu dengan prosedur di berkas contoh suara, lalu pakai sebagai acuan suara utama.
 
 Baca [struktur workshop](../../references/workshop-structure.md), [aturan sumber](../../references/sources-and-citations.md), dan [cakupan harness agen](../../references/agent-harness-curriculum.md) bila topik agent relevan. Jika pengguna mensyaratkan persetujuan materi sebelum workbook, tunggu persetujuan itu untuk membuat workbook lengkap. Dari draft yang belum disetujui, boleh susun peta calon latihan dalam respons. Jika deck atau outline sudah disetujui, ambil bagian yang benar-benar dapat dipraktikkan. Jika belum ada materi, susun latihan dari tujuan belajar dan sumber yang diberikan sesuai permintaan pengguna.
 

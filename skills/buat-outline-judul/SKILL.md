@@ -5,7 +5,7 @@ description: Susun urutan judul slide workshop dari tema, audiens, durasi, rundo
 
 # /buat-outline-judul
 
-Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) sebelum menulis keluaran untuk peserta atau fasilitator.
+Baca [panduan bahasa dan pengajaran](../../references/language-and-teaching.md) dan [contoh suara](../../references/contoh-suara.md) sebelum menulis keluaran untuk peserta atau fasilitator. Bila pengguna memberi input `contoh-suara`, olah dulu dengan prosedur di berkas contoh suara, lalu pakai sebagai acuan suara utama.
 
 Baca [struktur workshop](../../references/workshop-structure.md). Baca [cakupan harness agen](../../references/agent-harness-curriculum.md) bila topik memuat agent atau harness engineering. Gunakan [analisis deck contoh](../../references/FGD_Child_Safety-analysis.md) hanya bila pengguna meminta alur yang serupa.
 

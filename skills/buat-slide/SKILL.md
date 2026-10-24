@@ -13,7 +13,7 @@ Pakai mode **Normal** kecuali pengguna menulis `mode: detail`. Normal berarti pa
 
 ## Langkah
 
-1. Ambil pesan utama, audiens, sumber, rasio, mode, gaya, dan format yang sudah disebut pengguna.
+1. Ambil pesan utama, audiens, sumber, rasio, mode, gaya, format, dan `contoh-suara` yang sudah disebut pengguna. Suara mengikuti [contoh suara](../../references/contoh-suara.md). Bila `contoh-suara` diberikan, olah dulu dengan prosedur di berkas itu, lalu pakai sebagai acuan suara utama.
 2. Pilih pola dari katalog menurut hubungan yang diajarkan. Bila dua pola sama-sama masuk akal dan hasilnya akan berbeda secara material, tawarkan pilihan sebagai satu keputusan ber-ID `K-YYMMDD-NN` sesuai aturan workspace, dengan rekomendasi. Bila pengguna sudah memilih, langsung kerjakan.
 3. Buat badan infografis dengan GPT Image memakai templat prompt di katalog, tanpa teks di dalam gambar. Untuk angka dan diagram presisi, bentuk native boleh menjadi visual utama. Di Claude Code, periksa dulu apakah GPT Image terhubung. Bila belum, pakai diagram native atau gambar dengan izin pakai yang jelas.
 4. Tambahkan judul, label, angka, dan sitasi sebagai teks native, dekat objek yang dinamainya. Judul dan label bisa dipahami sebelum istilah teknisnya dijelaskan. Bila istilah baku perlu muncul, beri padanan singkat di slide yang sama.

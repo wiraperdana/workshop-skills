@@ -25,7 +25,7 @@ Contoh perbaikan:
 | Harness mengelola agentic loop | Siapa mengatur langkah, alat, izin, dan batas kerja agen? |
 | Context engineering memilih bahan kerja | Jawaban AI bergantung pada bahan yang kita berikan |
 
-Baca [contoh suara](contoh-suara.md) sebelum menulis naskah bicara. Berkas itu berisi sepuluh pola dari naskah yang pernah dibawakan penulis. Contoh asli lebih kuat daripada aturan apa pun.
+Baca [contoh suara](contoh-suara.md) sebelum menulis naskah bicara. Berkas itu berisi sepuluh pola dari naskah yang pernah dibawakan penulis, urutan prioritas suara, dan cara menerima contoh suara baru dari pengguna lewat input `contoh-suara`. Contoh asli lebih kuat daripada aturan apa pun.
 
 ## Tanda tulisan mesin yang dihindari
 
