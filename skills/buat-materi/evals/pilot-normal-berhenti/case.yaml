@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: pilot-normal-berhenti
+expected_outcome: |
+  Skill menyatakan mode Normal, menyusun anggaran slide dan gambar, lalu memproduksi tepat tiga
+  slide pilot dari bagian berbeda dalam satu PPTX. Setiap pilot punya naskah bicara empat bagian
+  di slide notes dan sumber yang terbaca. Setelah itu skill berhenti dan meminta persetujuan
+  sebelum produksi penuh.
+context:
+  scaffold_script: place-files.sh

@@ -49,11 +49,22 @@ python3 -I scripts/audit_deck.py <deck.pptx> --mode normal
 
 Skrip ini hanya memakai pustaka standar Python. Ia menandai kisi kartu teks, teks layar yang melebihi batas mode, slide tanpa naskah bicara, dan gambar besar yang dipakai ulang. Kode keluar 1 berarti deck wajib direvisi. Tandanya adalah petunjuk, dan putusan akhir tetap dibuat dari render setiap slide.
 
+## Template PowerPoint
+
+`templates/workshop-template.pptx` berisi delapan layout 16:9: Cover, Pembuka bagian, Visual penuh, Sebelum dan sesudah, Skenario berjam, Detail, Tugas latihan, dan Referensi. Setiap layout punya zona tetap untuk judul, gambar, bar kesimpulan, sumber, dan nomor slide. `workshop-template.potx` berisi template yang sama untuk dipakai langsung di PowerPoint.
+
+Template dibangun ulang dengan `python3 scripts/build_template.py`, yang memerlukan `python-pptx`. Palet, font, dan posisi zona diatur lewat konstanta di skrip itu. Font `Inter Display` dan `Inter` perlu terpasang agar tampilan sesuai rancangan.
+
+## Eval
+
+Tiga kasus uji berbahan sintetis tersedia di `skills/buat-outline/evals/` dan `skills/buat-materi/evals/`, dalam format yang dibaca `claude plugin eval` dan skill `skill-creator`. Suara, grafis, dan pedagogi dinilai dengan [rubrik manusia](evals/RUBRIK.md).
+
 ## Referensi
 
 | Berkas | Isi |
 |---|---|
 | [language-and-teaching.md](references/language-and-teaching.md) | Suara, tanda tulisan mesin, tiga lapis bahasa, naskah bicara |
+| [contoh-suara.md](references/contoh-suara.md) | Sepuluh pola suara dari naskah yang pernah dibawakan penulis |
 | [mode-slide.md](references/mode-slide.md) | Normal dan Detail |
 | [workshop-structure.md](references/workshop-structure.md) | Anggaran slide dan gambar, running example, pola segmen |
 | [pola-visual.md](references/pola-visual.md) | Dua belas pola visual, arah gambar, klise, templat prompt, audit multimedia |
@@ -68,7 +79,7 @@ Untuk memakai deck acuan sendiri, letakkan deck di root repo, lalu tulis analisi
 
 ## Instalasi
 
-Setiap skill tinggal di `skills/<nama>/SKILL.md`. Folder `references` dan `scripts` di dalam setiap skill adalah symlink ke folder bersama di root repo.
+Setiap skill tinggal di `skills/<nama>/SKILL.md`. Folder `references`, `scripts`, dan `templates` di dalam folder skill adalah symlink ke folder bersama di root repo.
 
 Untuk Claude Code, tautkan folder skill ke `~/.claude/skills/`. Untuk Codex, tautkan ke `~/.agents/skills/`. Mulai sesi baru bila daftar perintah belum diperbarui.
 

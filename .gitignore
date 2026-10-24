@@ -7,3 +7,5 @@ __pycache__/
 # Analisis dan resep deck acuan memuat rincian proyek asal, jadi hanya disimpan lokal (K-261024-02).
 references/FGD_Child_Safety-analysis.md
 references/slide-recipes.md
+# Template milik produk ini tetap ikut repo.
+!templates/workshop-template.pptx

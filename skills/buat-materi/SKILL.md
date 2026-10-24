@@ -51,7 +51,7 @@ Produksi tiga slide isi dari bagian yang berbeda, lengkap dengan gambar, teks na
 
 Buat gambar dengan GPT Image untuk badan infografis slide konseptual, memakai templat prompt di [pola visual](../../references/pola-visual.md). Di Codex, pakai tool gambar bawaan sesuai skill `imagegen`. Di Claude Code, periksa koneksi GPT Image lebih dulu. API berbayar atau model gambar lain dipakai hanya dengan izin pengguna. Bila GPT Image tidak tersedia, buat infografis native yang setara fungsinya dan laporkan perbedaannya.
 
-Rakit PPTX 16:9. Label, angka, rumus, panah berlabel, dan sitasi ditulis sebagai teks native di atas gambar, dekat objek yang dinamainya. Variasikan pola visual sepanjang deck.
+Rakit PPTX 16:9 dari `templates/workshop-template.pptx` di folder skill ini, kecuali pengguna memberi template sendiri. Pilih layout menurut pola visual, mengikuti tabel di [produksi visual](../../references/visual-production.md). Label, angka, rumus, panah berlabel, dan sitasi ditulis sebagai teks native di atas gambar, dekat objek yang dinamainya. Variasikan pola visual sepanjang deck.
 
 ### 6. Tulis naskah bicara di slide notes
 

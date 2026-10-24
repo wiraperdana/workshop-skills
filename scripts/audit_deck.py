@@ -93,10 +93,33 @@ def similar(a, b, tol=0.12):
     return abs(a - b) <= tol * max(a, b)
 
 
+def ph_idx(el):
+    ph = el.find(".//p:nvPr/p:ph", NS)
+    return None if ph is None else ph.get("idx", "0")
+
+
+def layout_boxes(zf, rels):
+    """Posisi placeholder di layout. Placeholder di slide mewarisinya bila tidak menyimpan posisi sendiri."""
+    layout = next((t for kind, t in rels.values() if kind == "slideLayout"), None)
+    if not layout or layout not in zf.namelist():
+        return {}
+    root = ET.fromstring(zf.read(layout))
+    out = {}
+    for el in list(root.iter("{%s}sp" % NS["p"])) + list(root.iter("{%s}pic" % NS["p"])):
+        idx, b = ph_idx(el), box(el)
+        if idx is not None and b:
+            out[idx] = b
+    return out
+
+
 def audit_slide(zf, part, sw, sh):
     root = ET.fromstring(zf.read(part))
     rels = rels_of(zf, part)
     area = sw * sh
+    inherited = layout_boxes(zf, rels)
+
+    def shape_box(el):
+        return box(el) or inherited.get(ph_idx(el))
 
     title, body_words, cards, pics = "", 0, [], []
     text_shapes = []
@@ -108,7 +131,7 @@ def audit_slide(zf, part, sw, sh):
         geom = sp.find(".//a:prstGeom", NS)
         text_shapes.append({
             "paras": paras,
-            "box": box(sp),
+            "box": shape_box(sp),
             "is_title": ph is not None and ph.get("type") in ("title", "ctrTitle"),
             "geom": geom.get("prst") if geom is not None else None,
         })
@@ -142,7 +165,7 @@ def audit_slide(zf, part, sw, sh):
     card_grid = max((len(g) for g in groups), default=0)
 
     for pic in root.iter("{%s}pic" % NS["p"]):
-        b = box(pic)
+        b = shape_box(pic)
         blip = pic.find(".//a:blip", NS)
         rid = blip.get("{%s}embed" % NS["r"]) if blip is not None else None
         target = rels.get(rid, (None, None))[1]

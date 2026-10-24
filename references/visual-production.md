@@ -23,6 +23,29 @@ Untuk audiens literasi awal, ikuti [panduan bahasa dan pengajaran](language-and-
 
 Font native yang tercantum di deck adalah `Inter Display` dan `Inter`. Periksa apakah font tersedia sebelum merender. Jika tidak, jelaskan substitusi yang dipakai dan nilai ulang tata letak. Teks yang sudah menjadi piksel pada PNG tidak memberi bukti nama font yang tepat.
 
+## Template PowerPoint
+
+Rakit deck dari `templates/workshop-template.pptx`, kecuali pengguna memberi template sendiri. Berkas `workshop-template.potx` berisi template yang sama untuk dipakai langsung di PowerPoint. `python-pptx` hanya bisa membuka versi `.pptx`.
+
+| Layout | Pola visual | Placeholder (idx) |
+|---|---|---|
+| Cover | Pembuka sesi | judul 0, subjudul 1, pembicara 23, gambar 10 |
+| Pembuka bagian | Pergantian bagian | label bagian 24, judul 0, gambar 10, sumber 20 |
+| Visual penuh | Pola apa pun dengan satu gambar besar, default mode Normal | judul 0, gambar 10, kesimpulan 22, sumber 20 |
+| Sebelum dan sesudah | Sebelum dan sesudah, kontras benar dan salah | judul 0, label 12 dan 13, gambar 10 dan 11, kesimpulan 22, sumber 20 |
+| Skenario berjam | Skenario berjam, perjalanan satu permintaan | judul 0, jam 30 sampai 33, panel 10 sampai 13, keterangan 40 sampai 43, kesimpulan 22, sumber 20 |
+| Detail | Slide mode Detail | judul 0, subjudul 1, isi berlapis 2, gambar 10, kesimpulan 22, sumber 20 |
+| Tugas latihan | Tugas latihan | judul 0, langkah 1, label 12, contoh hasil 10, kesimpulan 22, sumber 20 |
+| Referensi | Daftar referensi | judul 0, daftar 1, sumber 20 |
+
+Label native di atas gambar, panah, dan angka ditambahkan sebagai bentuk biasa di slide. Tiga hal teknis perlu diingat:
+
+1. `python-pptx` tidak menyalin placeholder nomor slide ke slide baru. Tambahkan nomor slide sebagai kotak teks kecil di kanan bawah, sejajar dengan sumber.
+2. Bentuk dekoratif di layout selalu tergambar di bawah isi slide. Gambar yang menutup bar kesimpulan akan menyembunyikannya, jadi biarkan gambar di dalam placeholdernya.
+3. Font `Inter Display` dan `Inter` perlu terpasang di mesin perender. Bila belum terpasang, PowerPoint memakai font pengganti. Laporkan penggantian itu dan periksa ulang tata letaknya.
+
+Palet, font, dan posisi zona diatur di `scripts/build_template.py`. Ubah konstantanya, lalu jalankan ulang skrip itu untuk menghasilkan template baru.
+
 ## Storyboard dan prompt gambar per slide
 
 Pilih pola dari [katalog pola visual](pola-visual.md) menurut hubungan yang diajarkan. Katalog itu juga memuat arah gambar, daftar klise yang dihindari, templat prompt, dan audit prinsip multimedia.

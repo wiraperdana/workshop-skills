@@ -22,6 +22,6 @@ Pakai mode **Normal** kecuali pengguna menulis `mode: detail`. Normal berarti pa
 
 ## Format
 
-PNG memerlukan teks yang sudah tepat pada hasil akhir. PPTX dan PDF memakai teks native bila memungkinkan. SVG dari gambar GPT Image tetap berisi raster di dalam wadah SVG, dan hal itu disebutkan dengan jelas.
+PNG memerlukan teks yang sudah tepat pada hasil akhir. PPTX dan PDF memakai teks native bila memungkinkan. PPTX dirakit dari `templates/workshop-template.pptx` di folder skill ini, dengan layout yang dipilih menurut tabel di [produksi visual](../../references/visual-production.md). SVG dari gambar GPT Image tetap berisi raster di dalam wadah SVG, dan hal itu disebutkan dengan jelas.
 
 Kredit visual dan label contoh hipotetis ditulis terpisah dari sitasi isi. Tampilkan pratinjau di respons bila tersedia. Simpan berkas final di `_output/` scope terdekat bila pengguna meminta atau menyetujui keluaran berkas.

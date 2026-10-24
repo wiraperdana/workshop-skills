@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: outline-normal-puskesmas
+expected_outcome: |
+  Outline dalam mode Normal untuk sesi 60 menit. Jumlah slide sesuai anggaran waktu presentasi
+  sekitar 40 menit. Satu running example diambil dari dokumen sumber dan muncul berulang.
+  Setiap slide punya pesan utama, pola visual dari katalog, inti naskah bicara, dan sumber
+  per bagian dokumen. Setiap segmen konsep punya pertanyaan cek pemahaman. Judul ditulis dalam
+  bahasa kerja sehari-hari, tanpa em dash dan tanpa tanda tulisan mesin.
+context:
+  scaffold_script: place-files.sh

@@ -25,7 +25,7 @@ Contoh perbaikan:
 | Harness mengelola agentic loop | Siapa mengatur langkah, alat, izin, dan batas kerja agen? |
 | Context engineering memilih bahan kerja | Jawaban AI bergantung pada bahan yang kita berikan |
 
-Kumpulkan contoh suara asli Wira dari transkrip rekaman sesi sebelumnya di `contoh-suara.md` bila berkas itu tersedia. Contoh asli lebih kuat daripada aturan apa pun.
+Baca [contoh suara](contoh-suara.md) sebelum menulis naskah bicara. Berkas itu berisi sepuluh pola dari naskah yang pernah dibawakan penulis. Contoh asli lebih kuat daripada aturan apa pun.
 
 ## Tanda tulisan mesin yang dihindari
 
@@ -34,7 +34,7 @@ Kumpulkan contoh suara asli Wira dari transkrip rekaman sesi sebelumnya di `cont
 Periksa setiap judul, label, dan naskah terhadap daftar ini. Ganti dengan kalimat yang punya pelaku dan detail.
 
 - Kata pengisi: `memastikan`, `secara efektif`, `secara optimal`, `berperan penting`, `memberdayakan`, `komprehensif`, `holistik`, `lanskap`, `ekosistem` bila tidak merujuk sistem nyata, `di era digital`, `di tengah pesatnya`.
-- Pembuka basa-basi: `Mari kita`, `Pada kesempatan ini`, `Tidak dapat dipungkiri`.
+- Pembuka basa-basi: `Pada kesempatan ini`, `Tidak dapat dipungkiri`, dan `Mari kita` yang tidak diikuti tindakan. `Mari kita rangkum` di naskah bicara wajar, karena ia mengajak audiens melakukan sesuatu.
 - Pola oposisi: `tidak hanya X, tetapi juga Y`, `bukan sekadar X`, `X bukan Y, melainkan Z`. Nyatakan Y secara langsung.
 - Kebiasaan struktur: setiap slide berisi tepat tiga atau empat butir, setiap slide ditutup moral, setiap judul berbentuk `Kata: Penjelasan`.
 - Label serba huruf kapital untuk semua kotak. Pakai kapital hanya untuk penekanan yang jarang.

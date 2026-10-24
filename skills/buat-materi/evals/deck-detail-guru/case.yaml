@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: deck-detail-guru
+expected_outcome: |
+  Deck PPTX mode Detail sekitar 7 sampai 10 slide yang lolos audit_deck.py dengan --mode detail.
+  Sedikitnya 90% slide isi berupa infografis penjelas. Setiap slide isi punya naskah bicara di slide
+  notes. Contoh soal buatan diberi label contoh hipotetis, dan ada slide referensi.
+context:
+  scaffold_script: place-files.sh
