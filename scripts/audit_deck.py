@@ -122,19 +122,29 @@ def audit_slide(zf, part, sw, sh):
         return box(el) or inherited.get(ph_idx(el))
 
     title, body_words, cards, pics = "", 0, [], []
-    text_shapes = []
+    text_shapes, panels = [], []
     for sp in root.iter("{%s}sp" % NS["p"]):
         paras = shape_text(sp)
+        geom = sp.find(".//a:prstGeom", NS)
+        filled = sp.find("p:spPr/a:solidFill", NS) is not None or sp.find("p:spPr/a:gradFill", NS) is not None
+        b = shape_box(sp)
+        # Panel berwarna seukuran kartu, berisi teks sendiri atau menjadi alas kotak teks lain.
+        if filled and b and geom is not None and geom.get("prst") in CARD_SHAPES \
+                and 0.015 * area <= b[2] * b[3] <= 0.3 * area:
+            panels.append(b)
         if not paras:
             continue
         ph = sp.find(".//p:nvPr/p:ph", NS)
-        geom = sp.find(".//a:prstGeom", NS)
         text_shapes.append({
             "paras": paras,
-            "box": shape_box(sp),
+            "box": b,
             "is_title": ph is not None and ph.get("type") in ("title", "ctrTitle"),
-            "geom": geom.get("prst") if geom is not None else None,
         })
+
+    def inside(inner, outer):
+        x, y, w, h = inner
+        cx, cy = x + w / 2, y + h / 2
+        return outer[0] <= cx <= outer[0] + outer[2] and outer[1] <= cy <= outer[1] + outer[3]
 
     # Judul: placeholder judul bila ada, bila tidak ada pakai teks paling atas di 20% tinggi slide.
     title_shape = next((s for s in text_shapes if s["is_title"]), None)
@@ -149,11 +159,11 @@ def audit_slide(zf, part, sw, sh):
             continue
         kept = [p for p in s["paras"] if not SOURCE_LINE.match(p) and not p.strip().isdigit()]
         body_words += sum(len(words(p)) for p in kept)
-        b = s["box"]
-        if b and s["geom"] in CARD_SHAPES and 0.015 * area <= b[2] * b[3] <= 0.3 * area:
-            cards.append(b)
 
-    # Kartu tanpa teks yang menjadi latar kotak teks juga umum; hitung kotak teks yang berdempet ukuran.
+    # Kartu adalah panel berwarna yang memuat teks. Kotak teks polos di luar panel adalah label.
+    cards = [p for p in panels if any(t["box"] and inside(t["box"], p) for t in text_shapes)]
+
+    # Hitung kartu yang seukuran, karena kisi kartu tersusun dari kotak-kotak kembar.
     groups = []
     for c in cards:
         for g in groups:
